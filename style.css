@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b0d14;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.typing-container {
+    width: 95%;
+    max-width: 750px;
+    background: #111424;
+    padding: 25px;
+    border: 1px solid #00d2ff55;
+    text-align: center;
+}
+
+h1 { color: #00d2ff; }
+
+.subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.levels {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.level {
+    padding: 6px 14px;
+    border: 1px solid #00d2ff;
+    background: transparent;
+    color: #00d2ff;
+    cursor: pointer;
+}
+
+.level.active {
+    background: #00d2ff;
+    color: #08090d;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.text-display {
+    background: #080a14;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.text-display span.correct { color: #00ff9c; }
+.text-display span.wrong { color: #ff4d4d; }
+.text-display span.active { border-bottom: 2px solid #00d2ff; }
+
+#typingInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.key {
+    padding: 8px 0;
+    background: #1b1f36;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.key.active {
+    background: #00d2ff;
+    color: #08090d;
+}
+
+#restartBtn {
+    padding: 8px 22px;
+    background: #00d2ff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 10px;
+    color: #00d2ff;
+}
+.controls {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.controls select {
+    padding: 4px;
+}
+
+#customText {
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+#useCustom {
+    margin-bottom: 10px;
+    padding: 6px 18px;
+    background: transparent;
+    color: #00d2ff;
+    border: 1px solid #00d2ff;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+#customControls {
+    margin: 10px 0;
+}
+
+#customControls textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+#customControls select {
+    margin-left: 5px;
+    padding: 4px;
+}
+
+#customControls button {
+    margin-top: 6px;
+    padding: 6px 18px;
+    background: transparent;
+    color: #00d2ff;
+    border: 1px solid #00d2ff;
+    cursor: pointer;
+}
+.student-name {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.result-card {
+    margin-top: 15px;
+    padding: 15px;
+    background: #080a14;
+    border: 1px solid #00d2ff;
+    text-align: left;
+}
+
+.result-card h3 {
+    color: #00d2ff;
+    margin-bottom: 8px;
+}
+
+.scoreboard {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.scoreboard h3 {
+    color: #00d2ff;
+    margin-bottom: 8px;
+}
+
+.scoreboard ol {
+    padding-left: 20px;
+}
+
+.scoreboard li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+.reset-btn {
+    margin-top: 10px;
+    padding: 6px 16px;
+    background: transparent;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.reset-btn:hover {
+    background: #ff4d4d;
+    color: #08090d;
+}
