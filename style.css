@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b0d14;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.typing-container {
+    width: 95%;
+    max-width: 750px;
+    background: #111424;
+    padding: 25px;
+    border: 1px solid #00d2ff55;
+    text-align: center;
+}
+
+h1 {
+    color: #00d2ff;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* =========================
+   LEVEL SELECTOR (FIXED)
+========================= */
+.levels {
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.level {
+    padding: 10px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    border: 1px solid #00d2ff;
+    background: transparent;
+    color: #00d2ff;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.level:hover,
+.level.active {
+    background: #00d2ff;
+    color: #08090d;
+    box-shadow: 0 0 10px #00d2ff;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.student-name,
+#typingInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+/* =========================
+   STATS
+========================= */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   TEXT DISPLAY
+========================= */
+.text-display {
+    background: #080a14;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.text-display span.correct { color: #00ff9c; }
+.text-display span.wrong { color: #ff4d4d; }
+.text-display span.active { border-bottom: 2px solid #00d2ff; }
+
+/* =========================
+   KEYBOARD
+========================= */
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.key {
+    padding: 8px 0;
+    background: #1b1f36;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.key.active {
+    background: #00d2ff;
+    color: #08090d;
+}
+
+/* =========================
+   CUSTOM CONTROLS
+========================= */
+.controls {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.controls select {
+    padding: 4px;
+}
+
+#customText {
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+#useCustom {
+    padding: 6px 18px;
+    background: transparent;
+    color: #00d2ff;
+    border: 1px solid #00d2ff;
+    cursor: pointer;
+}
+
+/* =========================
+   RESULT & SCOREBOARD
+========================= */
+.result-card {
+    background: #080a14;
+    border: 1px solid #00d2ff55;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.scoreboard {
+    margin: 15px 0;
+}
+
+.scoreboard ol {
+    padding-left: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+#restartBtn,
+.reset-btn {
+    padding: 8px 22px;
+    margin-top: 10px;
+    background: #00d2ff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* =========================
+   UTIL
+========================= */
+.hidden {
+    display: none;
+}
